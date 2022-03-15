@@ -3,11 +3,86 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #10564F;
+  color: #ADC9C5;
 }
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+h1{
+  text-align: center;
+  margin:20px 0;
+  font-size: 36px;
+}
+.input_area{
+  display: flex;
+  width: 100%;
+  /* justify-content: space-around; */
+  justify-content: center;
+  margin-bottom: 50px;
+}
+#todo_box{
+  width: 70%;
+  padding: 10px 5px;
+}
+.addButton{
+  padding:11px 15px;
+  border:1px solid #16796F;
+  border-radius: 2px;
+  background-color:#16796F;
+  color: #ADC9C5;
+}
+.addButton:hover{
+  background-color:#ADC9C5;
+  color:#16796F;
+}
+.addItems{
+  margin-bottom: 50px;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+.addItems ul{
+  list-style: none;
+  display: block;
+  width: 85%;
+  margin: 0 auto;
+}
+.addItems ul li{
+  cursor: context-menu;
+  padding:10px 15px
+}
+.listItem{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 15px 5px;
+  margin: 10px 0;
+  color: #ffff;
+  border-radius:5px;
+  /* background-color:#6CB0A8; */
+  backdrop-filter: saturate(300%) blur(100px);
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
+.actionButtons{
+  display: flex;
+  justify-content: end;
+  width: 20%;
+}
+.edit{
+  border: none;
+  background: none;
+  color: #6CB0A8;
+}
+.delete{
+  border: none;
+  background: none;
+  color: red;
+}
+.cross{
+  text-decoration: line-through;
+}
+/* .cross:hover{
+  cursor: pointer;
+} */
